@@ -20,7 +20,7 @@
             var showArr = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'];//圖片放入一維陣列//變數一定要在最上面先宣告，[0,1,2,3,4,...]***
             
             function fRandomBy(under,over){//取隨機參數，範圍0-4//function可以搬到最後，不影響
-                switch(arguments.length){//switch，if/else條件太多時，可使用switch case敘述一連串的條件判斷與回應。
+                switch(arguments.length){//argument.length是代入的參數量//switch，if/else條件太多時，可使用switch case敘述一連串的條件判斷與回應。
                     case 1: return parseInt(Math.random()*under+1);//取整數，下限+1
                     case 2: return parseInt(Math.random()*(over-under+1)+under);//(上限-下限+1)+下限
                     default: return 0;//第0張
